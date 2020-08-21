@@ -3,7 +3,6 @@
 /* Created on:     19/08/2020 20:28:20                          */
 /*==============================================================*/
 
-
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
    where r.fkeyid = object_id('ABONOFACTURA') and o.name = 'FK_ABONOFAC_ABONO_FAC_FACTURA')
