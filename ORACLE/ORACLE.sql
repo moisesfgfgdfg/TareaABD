@@ -1,38 +1,4 @@
 /*==============================================================*/
-/* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     19/08/2020 20:29:44                          */
-/*==============================================================*/
-
-
-alter table ABONOFACTURA
-   drop constraint FK_ABONOFAC_ABONO_FAC_FACTURA;
-
-alter table ABONOFACTURA
-   drop constraint FK_ABONOFAC_CLIENTE_A_CLIENTES;
-
-alter table FACTURA
-   drop constraint FK_FACTURA_CLIENTE_V_CLIENTES;
-
-alter table FACTURA
-   drop constraint FK_FACTURA_VENTA_FAC_SERVICIO;
-
-drop index ABONO_FACTURA_FK;
-
-drop index CLIENTE_ABONO_FK;
-
-drop table ABONOFACTURA cascade constraints;
-
-drop table CLIENTES cascade constraints;
-
-drop index VENTA_FACTURA_FK;
-
-drop index CLIENTE_VENTA_FK;
-
-drop table FACTURA cascade constraints;
-
-drop table SERVICIO_MORTUORIO cascade constraints;
-
-/*==============================================================*/
 /* Table: ABONOFACTURA                                          */
 /*==============================================================*/
 create table ABONOFACTURA 

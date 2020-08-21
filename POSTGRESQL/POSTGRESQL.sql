@@ -1,34 +1,4 @@
 /*==============================================================*/
-/* DBMS name:      PostgreSQL 8                                 */
-/* Created on:     19/08/2020 20:31:26                          */
-/*==============================================================*/
-
-
-drop index ABONO_FACTURA_FK;
-
-drop index CLIENTE_ABONO_FK;
-
-drop index ABONOFACTURA_PK;
-
-drop table ABONOFACTURA;
-
-drop index CLIENTES_PK;
-
-drop table CLIENTES;
-
-drop index VENTA_FACTURA_FK;
-
-drop index CLIENTE_VENTA_FK;
-
-drop index FACTURA_PK;
-
-drop table FACTURA;
-
-drop index SERVICIO_MORTUORIO_PK;
-
-drop table SERVICIO_MORTUORIO;
-
-/*==============================================================*/
 /* Table: ABONOFACTURA                                          */
 /*==============================================================*/
 create table ABONOFACTURA (
